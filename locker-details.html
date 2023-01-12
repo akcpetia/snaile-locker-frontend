@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>Snaile</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=yes">
+
+    <!-- Chrome Android color -->
+    <meta name="theme-color" content="#333333">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="page">
+	<!-- HEADER -->
+	<header class="header">
+		<div class="container">
+			<a href="#!" class="header__logo">
+				<img src="images/logo-snaile.png" alt="Snaile">
+			</a>
+
+			<nav class="header__nav">
+				<a href="show-lockers.html">Show Lockers</a>
+				<a href="mapping.html">Mapping</a>
+				<a href="add-locker.html" class="btn btn--primary">Add Locker</a>
+			</nav>
+		</div>
+	</header>
+	<!-- / HEADER -->
+
+	
+	<main class="main">
+		<div class="container container--md">
+			<h1 class="title">Locker Details</h1>
+
+            <div class="row">
+                <div class="col-xs-6 d-flex flex-col">
+                    <div class="card flex-1 mb-4">
+                        <div class="card__header">
+                            <h3 class="card__title">Device Details</h3>
+                        </div>
+                        <div class="card__body card__body--split">
+                            <div class="card__split">
+                                <dl class="card__info card__info--block">
+                                    <dt>ID:</dt>
+                                    <dd>2067</dd>
+                                </dl>
+                                <dl class="card__info card__info--block">
+                                    <dt>Name:</dt>
+                                    <dd>Snaile 110</dd>
+                                </dl>
+                                <dl class="card__info card__info--block">
+                                    <dt>Address:</dt>
+                                    <dd>12 Merry Road, apt 124</dd>
+                                </dl>
+                                <dl class="card__info card__info--block">
+                                    <dt>Notes:</dt>
+                                    <dd>Some additional notes about this locker...</dd>
+                                </dl>
+                            </div>
+                            <div class="card__split">
+                                <dl class="card__info mb-2">
+                                    <dt>Comps:</dt>
+                                    <dd>50 <span class="card__circle" style="background-color: #11C096"></span></dd>
+                                </dl>
+                                <dl class="card__info mb-2">
+                                    <dt>Used:</dt>
+                                    <dd>20 <span class="card__circle" style="background-color: #333333"></span></dd>
+                                </dl>
+
+                                <div class="btn-wrap btn-wrap--center"><img src="images/pie-chart.svg" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card__header">
+                            <h3 class="card__title">Device Configuration</h3>
+                        </div>    
+                        <div class="card__body">
+                            <form action="">
+                                <div class="form__group form__group--between">
+                                    <label class="form__label">Workflow:</label>
+                                    <select name="" id="" class="form__input form__input--width">
+                                        <option value="">Residential 1</option>
+                                        <option value="">Residential 2</option>
+                                        <option value="">Residential 3</option>
+                                    </select>
+                                </div>
+                                <div class="form__group form__group--between mb-0">
+                                    <label class="form__label">Roster:</label>
+                                    <select name="" id="" class="form__input form__input--width">
+                                        <option value="">Option 1</option>
+                                        <option value="">Option 2</option>
+                                        <option value="">Option 3</option>
+                                    </select>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-6">
+                    <div class="card">
+                        <div class="card__header">
+                            <h3 class="card__title">Compartment Diagram</h3>
+                        </div>    
+                        <div class="card__body">
+                            <div class="pills-wrap mb-2">
+                                <button class="pill pill--active" type="button">List View</button>
+                                <button class="pill" type="button">Deposit View</button>
+                            </div>
+
+                            <div class="diagram-wrap mb-2">
+                                <div class="diagram">
+                                    <div class="diagram__item diagram__item--empty diagram__item--sm">Empty</div>
+                                    <div class="diagram__item diagram__item--empty diagram__item--xs">Empty</div>
+                                    <div class="diagram__item diagram__item--screen diagram__item--md"></div>
+                                    <div class="diagram__item diagram__item--occupied diagram__item--xs">Occupied</div>
+                                    <div class="diagram__item diagram__item--occupied diagram__item--sm">Occupied</div>
+                                </div>
+                                <div class="diagram">
+                                    <div class="diagram__item diagram__item--empty diagram__item--sm">Empty</div>
+                                    <div class="diagram__item diagram__item--empty diagram__item--xs">Empty</div>
+                                    <div class="diagram__item diagram__item--faulty diagram__item--xs">Faulty</div>
+                                    <div class="diagram__item diagram__item--empty diagram__item--xs">Empty</div>
+                                    <div class="diagram__item diagram__item--empty diagram__item--disabled diagram__item--lg">
+                                        Empty
+                                        <svg role="img" class="icon icon-wheelchair"><use xlink:href="icons/icons.svg#icon-wheelchair"></use></svg>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="pagination">
+                                <a href="#!" class="pagination__btn">
+                                    <svg role="img" class="icon icon-angle-left"><use xlink:href="icons/icons.svg#icon-angle-left"></use></svg>
+                                </a>
+                                <a href="#!" class="pagination__btn">1</a>
+                                <a href="#!" class="pagination__btn pagination__btn--active">2</a>
+                                <a href="#!" class="pagination__btn">3</a>
+                                <a href="#!" class="pagination__btn">4</a>
+                                <a href="#!" class="pagination__btn">
+                                    <svg role="img" class="icon icon-angle-right"><use xlink:href="icons/icons.svg#icon-angle-right"></use></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+		</div>
+	</main>
+
+</body>
+</html>
